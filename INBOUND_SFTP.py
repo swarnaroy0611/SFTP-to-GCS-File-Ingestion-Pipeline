@@ -13,7 +13,7 @@ from airflow.operators.bash import BashOperator               #BashOperator runs
 from airflow.utils.trigger_rule import TriggerRule
 """Trigger Rule determines when a task is allowed to run based on the status of its upstream (parent) tasks."""
 
-dag_kwargs = {'dag_id': 'INBOUND_SFTP', 'schedule': None, 'params': {'COD_FILE': 'IN_SFTP'}, 'default_args': None, 'catchup': False, 'start_date': DateTime (2000, 1, 1, 0, 0, 0, tzinfo-Timezone('Europe/Rome)), 'template_searchpath': ['/home/airflow/gcs'], 'tags':["SFTP", "INBOUND_SFTP"]}
+dag_kwargs = {'dag_id': 'INBOUND_SFTP', 'schedule': None, 'params': {'COD_FILE': 'IN_SFTP'}, 'default_args': None, 'catchup': False, 'start_date': DateTime (2000, 1, 1, 0, 0, 0, tzinfo-Timezone('Asia/Kolkata')), 'template_searchpath': ['/home/airflow/gcs'], 'tags':["SFTP", "INBOUND_SFTP"]}
 
 dag DAG(**dag_kwargs)
 
