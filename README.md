@@ -3,19 +3,6 @@ Overview
 
 This project demonstrates an Airflow-based ETL flow that extracts CSV files from an external SFTP system and uploads them to Google Cloud Storage (GCS).
 
-** Flow**
-External SFTP
-     ↓
-SFTP Connection ID
-     ↓
-/remote/sample
-     ↓
-/tmp/IN_SFTP
-     ↓
-GCS Connection ID
-     ↓
-gs://ETL_DEMO_PROJECT/Source
-
 **Process**
 Read pipeline configuration from CONFIG_TABLE.
 Connect to the external SFTP server using the configured SFTP Connection ID.
